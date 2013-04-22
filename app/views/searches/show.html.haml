@@ -1,0 +1,7 @@
+RESULT
+
+- unless @result.errors.nil?
+  - @result.errors.each do |error|
+    %li= error
+
+  = @result.inspect

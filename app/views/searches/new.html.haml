@@ -1,0 +1,13 @@
+%h1
+  = link_to "US Weather Search", root_path
+
+= form_for(@search, :as => :search, :url => searches_path) do |f|
+  
+  - @search.errors.full_messages.each do |msg|
+    %li= msg
+  .control
+    %label Zipcode:
+    = f.text_field :zipcode
+  = submit_tag "Create"
+
+= render :partial => "previous_searches"

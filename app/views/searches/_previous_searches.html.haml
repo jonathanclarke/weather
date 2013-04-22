@@ -1,0 +1,21 @@
+- unless @results.nil?
+  - if @results.size > 0
+    %h2 Previous Searches
+    %table
+      %tr
+        %th Zipcode
+        %th City
+        %th State
+        %th Temp ( F )
+        %th When
+      - @results.each do |search|
+        %tr
+          %td= search.zipcode
+          %td= search.city
+          %td= search.state
+          %td
+            = search.temp_f          
+          %td
+            = "#{ time_ago_in_words(search.updated_at) } ago"
+
+    = paginate @results
