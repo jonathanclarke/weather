@@ -19,3 +19,5 @@ bundle exec rake
 bundle exec rails s
 
 http://localhost:3000
+
+Heroku deployment: http://sheltered-headland-2138.herokuapp.com/
