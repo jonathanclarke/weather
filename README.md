@@ -1,6 +1,9 @@
 weather
 =======
 
+This app pulls weather data via the weather underground api.  It is currently only setup for US zipcode data.
+
+
 #Directions for use
 
 rvm use ruby-1.9.3-p374
